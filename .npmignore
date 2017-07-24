@@ -4,3 +4,4 @@ README.md
 .editorconfig
 test/
 npm-debug.log
+.idea/
