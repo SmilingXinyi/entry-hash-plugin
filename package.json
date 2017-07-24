@@ -1,0 +1,19 @@
+{
+  "name": "webpack-entry-hash-plugin",
+  "version": "0.0.1",
+  "description": "Modify the target file that references the webpack entry",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmilingXinyi/entry-hash-plugin.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SmilingXinyi/entry-hash-plugin/issues"
+  },
+  "homepage": "https://github.com/SmilingXinyi/entry-hash-plugin#readme"
+}
