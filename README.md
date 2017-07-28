@@ -25,7 +25,7 @@ module.exports = {
 
 ## Example
 
-```
+``` javascript
 // webpack  output
 output: {
     filename: 'js/main.[hash:6].js',
