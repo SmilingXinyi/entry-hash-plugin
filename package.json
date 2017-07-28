@@ -1,6 +1,6 @@
 {
   "name": "webpack-entry-hash-plugin",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Modify the target file that references the webpack entry",
   "main": "index.js",
   "scripts": {
