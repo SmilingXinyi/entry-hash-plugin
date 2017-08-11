@@ -6,11 +6,20 @@ Modify the target file that references the webpack entry
 ``` javascript
 module.exports = {
     entry: ['./index.js', './index.html'],
+    /*
+    entry: {
+        index: ['./index.js', './index.html']
+    }
+    */
     ...
     plugins: {
         new EntryPlugins({
             file: './index.html',
-            toReplace: 'main.js'
+            // or template
+            toReplace: 'main.js',
+            // optional   toReplace: 'main.js?[name]=index',
+            publicPath: 'xxxx.com'
+            // optional   template example: {%$data.url%}
         })
     }
     ...
@@ -22,21 +31,5 @@ module.exports = {
 
 - file: the exported destination file
 - toReplace: replacement text
-
-## Example
-
-``` javascript
-// webpack  output
-output: {
-    filename: 'js/main.[hash:6].js',
-    path: buildPath,
-    publicPath: 'https://sm.baidu.com/'
-}
-
-// toReplace `main.js`
-<script src="main.js"></script>
-
-// result     use publicPath
-<script src="https://sm.baidu.com/js/main.2062b5.js"></script>
-```
-
+    - ?[name] = key : webpack replace [name]
+- publicPath: prefix,instead of the output.publicPath
